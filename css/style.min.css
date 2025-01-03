@@ -1036,18 +1036,29 @@ body.miniPlayer #lock-pause .bt .bck {
 }
 
 @-webkit-keyframes j {
-	to {
-		-webkit-transform: scale(1);
-		transform: scale(1)
-	}
-}
-
-@keyframes j {
-	to {
-		-webkit-transform: scale(1);
-		transform: scale(1)
-	}
-}
+    from {
+      filter: brightness(300%) blur(50px);
+      webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+    to {
+      filter: brightness(100%) blur(0px);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes j {
+    from {
+      filter: brightness(300%) blur(50px);
+      webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+    to {
+      filter: brightness(100%) blur(0px);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
 
 #home #img-version {
 	position: absolute;
